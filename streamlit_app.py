@@ -49,10 +49,6 @@ streamlit.write('The user entered ', fruit_choice)
 
 # write your own comment - what does this do?
 
-
-streamlit.stop()
-
-
 streamlit.header("The fruit load list contain:")
 # Snowflake related functions
 def get_fruit_load_list():
@@ -66,3 +62,5 @@ if streamlit.button('Get fruit load list:'):
 streamlit.dataframe(my_data_rows)
 
 my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+
+streamlit.stop()
