@@ -62,6 +62,4 @@ if streamlit.button('Get fruit load list:'):
 streamlit.dataframe(my_data_rows)
 
 streamlit.stop()
-my_cur.execute("insert into fruit_load_list values ('from streamlit')")
-
 
